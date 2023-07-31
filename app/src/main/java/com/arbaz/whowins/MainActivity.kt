@@ -23,7 +23,12 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+
         binding.resetBtn.visibility = View.GONE
+
+        binding.privacypolicy.setOnClickListener {
+
+        }
 
         binding.audioOnOff.setOnCheckedChangeListener({ _ , isChecked ->
              bool = if (isChecked) "on" else "off"

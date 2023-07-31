@@ -3,9 +3,23 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+
+
 android {
     namespace 'com.arbaz.whowins'
     compileSdk 33
+
+
+    buildscript {
+
+        repositories {
+
+            google()
+
+            mavenCentral()
+
+        }
+    }
 
     defaultConfig {
         applicationId "com.arbaz.whowins"
@@ -16,6 +30,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+
 
     buildFeatures {
         viewBinding true
@@ -45,4 +61,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    //Lottie Animation
+    implementation 'com.airbnb.android:lottie:3.4.0'
 }
